@@ -31,7 +31,12 @@ export default function MakascareHome(){
  const y1=useTransform(scrollYProgress,[0,.5],[0,150]);
  const y2=useTransform(scrollYProgress,[0,.5],[0,-90]);
  return <main className="site-shell">
-  <div className="announcement"><span>✦</span> Nationwide delivery across Nigeria <span>✦</span> Personal product support on WhatsApp <span>✦</span></div>
+  <div className="announcement" aria-label="Makascare announcements">
+   <div className="announcement-track">
+    <span>NATIONWIDE DELIVERY ACROSS NIGERIA</span><b>✦</b><span>PERSONAL SUPPORT ON WHATSAPP</span><b>✦</b><span>WELLNESS &amp; BEAUTY ESSENTIALS</span><b>✦</b><span>MAKASCARE LIFESTYLE</span><b>✦</b>
+    <span aria-hidden="true">NATIONWIDE DELIVERY ACROSS NIGERIA</span><b aria-hidden="true">✦</b><span aria-hidden="true">PERSONAL SUPPORT ON WHATSAPP</span><b aria-hidden="true">✦</b><span aria-hidden="true">WELLNESS &amp; BEAUTY ESSENTIALS</span><b aria-hidden="true">✦</b><span aria-hidden="true">MAKASCARE LIFESTYLE</span><b aria-hidden="true">✦</b>
+   </div>
+  </div>
   <header className="nav-shell"><nav className="nav container">
    <a href="#top" className="brand"><span className="brand-seal"><Leaf size={20}/></span><span><strong>MAKASCARE</strong><small>LIFESTYLE</small></span></a>
    <div className="nav-links"><a href="/shop">Shop</a><a href="#categories">Categories</a><a href="#about">Our story</a><a href="#reviews">Reviews</a></div>
