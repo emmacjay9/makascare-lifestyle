@@ -31,3 +31,93 @@
   .leaf-4,.leaf-7{display:none}
 }
 @media(prefers-reduced-motion:reduce){.floating-leaf{display:none}}
+
+/* Founder Section */
+.founder-section {
+  padding: 90px 0;
+  background: #f7f3ea;
+}
+
+.founder-inner {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.founder-image-wrap {
+  overflow: hidden;
+  border-radius: 28px;
+  min-height: 520px;
+}
+
+.founder-image {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.founder-copy > span {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  opacity: 0.65;
+}
+
+.founder-copy h2 {
+  margin: 0 0 24px;
+  font-size: clamp(42px, 5vw, 72px);
+  line-height: 0.98;
+  font-weight: 500;
+}
+
+.founder-copy h2 em {
+  font-weight: 400;
+}
+
+.founder-copy > p {
+  max-width: 620px;
+  font-size: 17px;
+  line-height: 1.8;
+  opacity: 0.78;
+}
+
+.founder-name {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.founder-name strong {
+  font-size: 18px;
+}
+
+.founder-name small {
+  opacity: 0.6;
+}
+
+@media (max-width: 800px) {
+  .founder-section {
+    padding: 60px 0;
+  }
+
+  .founder-inner {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .founder-image-wrap,
+  .founder-image {
+    min-height: 420px;
+  }
+
+  .founder-copy h2 {
+    font-size: 44px;
+  }
+}
