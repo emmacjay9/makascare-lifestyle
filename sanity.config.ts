@@ -2,6 +2,7 @@
 
 import { defineConfig } from "sanity";
 import { structureTool } from "sanity/structure";
+import { productType } from "./product";
 
 export default defineConfig({
   name: "default",
@@ -14,6 +15,7 @@ export default defineConfig({
 
   plugins: [structureTool()],
 
-  import { productType } from "./product";
+  schema: {
+    types: [productType],
   },
 });
