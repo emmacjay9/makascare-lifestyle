@@ -14,7 +14,6 @@ export default defineConfig({
 
   plugins: [structureTool()],
 
-  schema: {
-    types: [],
+  import { productType } from "./product";
   },
 });
