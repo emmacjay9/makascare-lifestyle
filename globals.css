@@ -26,10 +26,12 @@
 }
 .floating-leaf svg{display:block}
 .hero-v2-grid,.hero-scroll{position:relative;z-index:2}
+
 @media(max-width:700px){
   .floating-leaf{opacity:.42}
   .leaf-4,.leaf-7{display:none}
 }
-@media(prefers-reduced-motion:reduce){.floating-leaf{display:none}}
 
-
+@media(prefers-reduced-motion:reduce){
+  .floating-leaf{display:none}
+}
