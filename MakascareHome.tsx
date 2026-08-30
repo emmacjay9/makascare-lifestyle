@@ -7,12 +7,12 @@ import { ArrowRight, Check, Facebook, Leaf, MessageCircle, ShieldCheck, Sparkles
 
 const categories = ["Vitamins & Everyday Health","Collagen & Beauty","Women’s Wellness","Men’s Wellness","Weight Management","Herbal Wellness","Kids’ Vitamins"];
 const featured = [
-  { name:"Youtheory Collagen", cat:"Beauty from within", image:"/products/youtheory-collagen.jpg", tone:"sage" },
-  { name:"Vital Proteins Collagen Peptides", cat:"Daily collagen", image:"/products/vital-proteins.jpg", tone:"sky" },
-  { name:"Wellwoman Multi-Vitamin Gummies", cat:"Women’s wellness", image:"/products/wellwoman.jpg", tone:"plum" },
-  { name:"NeoCell Grassfed Collagen Peptides", cat:"Skin, hair & nails", image:"/products/neocell.jpg", tone:"rose" },
-  { name:"Kids Multi + Omega-3 Gummies", cat:"Kids’ wellness", image:"/products/immunboost-kids.jpg", tone:"amber" },
-  { name:"Magnesium Glycinate", cat:"Everyday minerals", image:"/products/magnesium-glycinate.jpg", tone:"blue" },
+  { name:"Youtheory Collagen", cat:"Beauty from within", image:"/catalog/1000342865.jpg", tone:"sage" },
+  { name:"Vital Proteins Collagen Peptides", cat:"Daily collagen", image:"/catalog/1000342925.jpg", tone:"sky" },
+  { name:"Wellwoman Multi-Vitamin Gummies", cat:"Women’s wellness", image:"/catalog/1000342931.jpg", tone:"plum" },
+  { name:"NeoCell Grassfed Collagen Peptides", cat:"Skin, hair & nails", image:"/catalog/1000342987.jpg", tone:"rose" },
+  { name:"Kids Multi + Omega-3 Gummies", cat:"Kids’ wellness", image:"/catalog/1000342869.jpg", tone:"amber" },
+  { name:"Magnesium Glycinate", cat:"Everyday minerals", image:"/catalog/1000342880.jpg", tone:"blue" },
 ];
 const reviews = [
   {quote:"The products are working o, I sleep like a baby now 😂",product:"Customer feedback"},
@@ -87,9 +87,9 @@ export default function MakascareHome(){
      <div className="micro-proof"><div className="avatars"><i>M</i><i>♡</i><i>4+</i></div><div><div className="stars">★★★★★</div><span>4 years serving the Makascare community</span></div></div>
     </motion.div>
     <div className="editorial-stage">
-      <motion.div className="editorial-card card-a" initial={{opacity:0,rotate:-5,x:30}} animate={{opacity:1,rotate:-3,x:0}} transition={{delay:.15,duration:.8}} whileHover={{rotate:0,scale:1.02}}><Image src="/products/youtheory-collagen.jpg" fill sizes="420px" alt="Youtheory collagen" priority/></motion.div>
-      <motion.div className="editorial-card card-b" initial={{opacity:0,rotate:8,y:30}} animate={{opacity:1,rotate:5,y:0}} transition={{delay:.3,duration:.8}} whileHover={{rotate:0,scale:1.03}}><Image src="/products/wellwoman.jpg" fill sizes="210px" alt="Wellwoman gummies"/></motion.div>
-      <motion.div className="editorial-card card-c" initial={{opacity:0,scale:.85}} animate={{opacity:1,scale:1}} transition={{delay:.45}} whileHover={{y:-8}}><Image src="/products/vital-proteins.jpg" fill sizes="190px" alt="Vital Proteins collagen"/></motion.div>
+      <motion.div className="editorial-card card-a" initial={{opacity:0,rotate:-5,x:30}} animate={{opacity:1,rotate:-3,x:0}} transition={{delay:.15,duration:.8}} whileHover={{rotate:0,scale:1.02}}><Image src="/catalog/1000342865.jpg" fill sizes="420px" alt="Youtheory collagen" priority/></motion.div>
+      <motion.div className="editorial-card card-b" initial={{opacity:0,rotate:8,y:30}} animate={{opacity:1,rotate:5,y:0}} transition={{delay:.3,duration:.8}} whileHover={{rotate:0,scale:1.03}}><Image src="/catalog/1000342931.jpg" fill sizes="210px" alt="Wellwoman gummies"/></motion.div>
+      <motion.div className="editorial-card card-c" initial={{opacity:0,scale:.85}} animate={{opacity:1,scale:1}} transition={{delay:.45}} whileHover={{y:-8}}><Image src="/catalog/1000342925.jpg" fill sizes="190px" alt="Vital Proteins collagen"/></motion.div>
       <motion.div className="stage-note" animate={{y:[0,-7,0]}} transition={{duration:4,repeat:Infinity}}><Sparkles size={15}/><span>Wellness, made personal.</span></motion.div>
       <div className="stage-ring ring-one"/><div className="stage-ring ring-two"/>
     </div>
