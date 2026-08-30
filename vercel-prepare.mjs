@@ -22,6 +22,7 @@ copy('MakascareHome.tsx','components/MakascareHome.tsx');
 copy('Shop.tsx','components/Shop.tsx');
 copy('globals.css','app/globals.css');
 copy('layout.tsx','app/layout.tsx');
+copy('IMG-20260830-WA0006.jpg', 'public/IMG-20260830-WA0006.jpg');
 
 fs.writeFileSync(path.join(root,'app/page.tsx'), `import MakascareHome from "@/components/MakascareHome";\nexport default function Home() { return <MakascareHome />; }\n`);
 fs.writeFileSync(path.join(root,'app/shop/page.tsx'), `import Shop from "../../components/Shop";\nexport default function Page(){return <Shop/>}\n`);
