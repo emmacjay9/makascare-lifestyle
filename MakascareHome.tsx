@@ -5,12 +5,12 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useState } from "react";
 import { ArrowRight, Check, Facebook, Leaf, MessageCircle, ShieldCheck, Sparkles, Truck, Waves, Menu, X, Instagram } from "lucide-react";
 
-const categories = ["Vitamins & Minerals","Collagen & Beauty","Women’s Wellness","Men’s Wellness","Weight Management","Herbal Wellness","Kids’ Vitamins"];
+const categories = ["Vitamins & Everyday Health","Collagen & Beauty","Women’s Wellness","Men’s Wellness","Weight Management","Herbal Wellness","Kids’ Vitamins"];
 const featured = [
   { name:"Youtheory Collagen", cat:"Beauty from within", image:"/products/youtheory-collagen.jpg", tone:"sage" },
   { name:"Vital Proteins Collagen Peptides", cat:"Daily collagen", image:"/products/vital-proteins.jpg", tone:"sky" },
   { name:"Wellwoman Multi-Vitamin Gummies", cat:"Women’s wellness", image:"/products/wellwoman.jpg", tone:"plum" },
-  { name:"NeoCell Collagen Peptides", cat:"Skin, hair & nails", image:"/products/neocell.jpg", tone:"rose" },
+  { name:"NeoCell Grassfed Collagen Peptides", cat:"Skin, hair & nails", image:"/products/neocell.jpg", tone:"rose" },
   { name:"Kids Multi + Omega-3 Gummies", cat:"Kids’ wellness", image:"/products/immunboost-kids.jpg", tone:"amber" },
   { name:"Magnesium Glycinate", cat:"Everyday minerals", image:"/products/magnesium-glycinate.jpg", tone:"blue" },
 ];
