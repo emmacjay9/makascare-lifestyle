@@ -125,6 +125,37 @@ export default function MakascareHome(){
 
   <section id="contact" className="contact-v2"><div className="container contact-card"><motion.div initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true}}><div className="kicker"><span></span> We’re here to help</div><h2>Not sure where<br/>to <em>start?</em></h2><p>Tell us what you’re looking for and we’ll help you browse the available range.</p></motion.div><div className="contact-buttons"><Wa label="Chat on WhatsApp"/><a className="button button-ghost" href="https://www.facebook.com/share/p/1KvrWxub23/" target="_blank" rel="noreferrer"><Facebook size={17}/> Facebook</a><a className="button button-ghost" href="https://www.tiktok.com/@makascare_lifestyle" target="_blank" rel="noreferrer">TikTok</a></div><div className="contact-leaf"><Leaf/></div></div></section>
 
+   <section className="founder-section">
+  <div className="container founder-inner">
+    <div className="founder-image-wrap">
+      <img
+        src="/IMG-20260830-WA0006.jpg"
+        alt="Amaka Okeke, founder of Makascare Lifestyle"
+        className="founder-image"
+      />
+    </div>
+
+    <div className="founder-copy">
+      <span>MEET THE FOUNDER</span>
+
+      <h2>
+        Wellness chosen <em>with care.</em>
+      </h2>
+
+      <p>
+        Makascare Lifestyle was created from a passion for helping people make
+        wellness part of their everyday lives, with carefully selected products
+        and a personal approach to every customer.
+      </p>
+
+      <div className="founder-name">
+        <strong>Amaka Okeke</strong>
+        <small>Founder, Makascare Lifestyle</small>
+      </div>
+    </div>
+  </div>
+</section>
+
   <footer className="footer-v2"><div className="container footer-top"><div className="brand footer-brand"><span className="brand-seal"><Leaf size={20}/></span><span><strong>MAKASCARE</strong><small>LIFESTYLE</small></span></div><p>Wellness. Quality. You.</p><div className="footer-links"><a href="/shop">Shop</a><a href="#about">About</a><a href="https://www.tiktok.com/@makascare_lifestyle" target="_blank" rel="noreferrer">TikTok</a><a href="https://www.facebook.com/share/p/1KvrWxub23/" target="_blank" rel="noreferrer">Facebook</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div></div><div className="container footer-bottom"><span>© 2026 Makascare Lifestyle</span><span>Nationwide delivery · Nigeria · Supplements are not a substitute for medical care</span></div></footer>
   <a className="floating-wa" href="https://wa.me/2348035218130" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp"><MessageCircle/></a>
  </main>
