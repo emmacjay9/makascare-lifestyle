@@ -1,25 +1,16 @@
-MAKASCARE CATALOGUE FIX
+MAKASCARE FINAL TOUCH FIX
 
-Upload every file in this folder to the ROOT of the existing GitHub repository.
-Allow files with the same names to replace/update the existing versions.
+Upload every file in this folder to the ROOT of your GitHub repository.
 
-Updated code files:
-- Shop.tsx
+Replace existing:
 - MakascareHome.tsx
 - globals.css
 
-New catalogue images needed by the corrected listings:
-- 1000343002.jpg
-- 1000343004.jpg
-- 1000343006.jpg
-- 1000343010.jpg
-- 1000343014.jpg
-- 1000343016.jpg
+Add these missing product images:
+- 1000342894.jpg  (Happy Hormones PCOS Multivitamin)
+- 1000342906.jpg  (PureEve Menofix)
+- 1000342996.jpg  (Gluta Glow Sparkle)
 
-This update:
-- remaps product names to the correct images
-- changes category 01 to Vitamins & Everyday Health
-- standardizes Herbal Wellness
-- fixes missing-image listings
-- keeps the animated announcement ticker
-- corrects NeoCell, Glucosamine, ONNY, Evening Primrose, CoQ10, Myo-Inositol, Calcium, Vitamin E and other shifted records
+Then commit. Vercel should redeploy automatically.
+
+This also restores subtle floating-leaf animation in the homepage hero.

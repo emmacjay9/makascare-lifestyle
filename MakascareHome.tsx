@@ -45,6 +45,15 @@ export default function MakascareHome(){
 
   <section id="top" className="hero-v2">
    <motion.div className="blur-orb orb-one" style={{y:y1}}/><motion.div className="blur-orb orb-two" style={{y:y2}}/>
+   <div className="floating-leaves" aria-hidden="true">
+    {[
+      {x:"7%",y:"16%",s:22,d:8,delay:0,r:-18},
+      {x:"18%",y:"70%",s:18,d:10,delay:1.2,r:24},
+      {x:"52%",y:"12%",s:16,d:9,delay:.7,r:12},
+      {x:"76%",y:"22%",s:24,d:11,delay:2,r:-30},
+      {x:"88%",y:"72%",s:19,d:9.5,delay:1.5,r:20},
+    ].map((leaf,i)=><motion.span key={i} className={`floating-leaf leaf-${i+1}`} style={{left:leaf.x,top:leaf.y}} initial={{opacity:0,rotate:leaf.r,scale:.85}} animate={{opacity:[0,.26,.18,.3,0],y:[0,-24,-7,-34,-52],x:[0,8,-5,10,2],rotate:[leaf.r,leaf.r+18,leaf.r-8,leaf.r+28,leaf.r+38],scale:[.85,1,.94,1.06,.9]}} transition={{duration:leaf.d,delay:leaf.delay,repeat:Infinity,ease:"easeInOut"}}><Leaf size={leaf.s}/></motion.span>)}
+   </div>
    <div className="container hero-v2-grid">
     <motion.div className="hero-copy-v2" initial={{opacity:0,y:28}} animate={{opacity:1,y:0}} transition={{duration:.7}}>
      <div className="kicker"><span></span> Curated wellness & beauty</div>
