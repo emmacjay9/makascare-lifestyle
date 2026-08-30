@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useState } from "react";
-import { ArrowRight, Check, Facebook, Leaf, MessageCircle, ShieldCheck, Sparkles, Truck, Waves, Menu, X, Instagram } from "lucide-react";
+import { ArrowRight, Check, Facebook, Leaf, MessageCircle, ShieldCheck, Sparkles, Truck, Waves, Menu, X } from "lucide-react";
 
 const categories = ["Vitamins & Everyday Health","Collagen & Beauty","Women’s Wellness","Men’s Wellness","Weight Management","Herbal Wellness","Kids’ Vitamins"];
 const featured = [
@@ -30,6 +30,17 @@ export default function MakascareHome(){
  const {scrollYProgress}=useScroll();
  const y1=useTransform(scrollYProgress,[0,.5],[0,150]);
  const y2=useTransform(scrollYProgress,[0,.5],[0,-90]);
+
+ const leaves = [
+   {x:"4%", y:"14%", s:34, d:7.8, delay:0, r:-18},
+   {x:"13%", y:"62%", s:28, d:9.5, delay:1.0, r:24},
+   {x:"40%", y:"9%", s:24, d:8.7, delay:.6, r:12},
+   {x:"68%", y:"13%", s:38, d:10.5, delay:1.7, r:-30},
+   {x:"84%", y:"60%", s:31, d:8.9, delay:1.2, r:20},
+   {x:"55%", y:"74%", s:26, d:9.8, delay:2.3, r:-8},
+   {x:"92%", y:"31%", s:23, d:8.2, delay:2.8, r:34},
+ ];
+
  return <main className="site-shell">
   <div className="announcement" aria-label="Makascare announcements">
    <div className="announcement-track">
@@ -45,15 +56,28 @@ export default function MakascareHome(){
 
   <section id="top" className="hero-v2">
    <motion.div className="blur-orb orb-one" style={{y:y1}}/><motion.div className="blur-orb orb-two" style={{y:y2}}/>
+
    <div className="floating-leaves" aria-hidden="true">
-    {[
-      {x:"7%",y:"16%",s:22,d:8,delay:0,r:-18},
-      {x:"18%",y:"70%",s:18,d:10,delay:1.2,r:24},
-      {x:"52%",y:"12%",s:16,d:9,delay:.7,r:12},
-      {x:"76%",y:"22%",s:24,d:11,delay:2,r:-30},
-      {x:"88%",y:"72%",s:19,d:9.5,delay:1.5,r:20},
-    ].map((leaf,i)=><motion.span key={i} className={`floating-leaf leaf-${i+1}`} style={{left:leaf.x,top:leaf.y}} initial={{opacity:0,rotate:leaf.r,scale:.85}} animate={{opacity:[0,.26,.18,.3,0],y:[0,-24,-7,-34,-52],x:[0,8,-5,10,2],rotate:[leaf.r,leaf.r+18,leaf.r-8,leaf.r+28,leaf.r+38],scale:[.85,1,.94,1.06,.9]}} transition={{duration:leaf.d,delay:leaf.delay,repeat:Infinity,ease:"easeInOut"}}><Leaf size={leaf.s}/></motion.span>)}
+    {leaves.map((leaf,i)=>
+      <motion.span
+        key={i}
+        className={`floating-leaf leaf-${i+1}`}
+        style={{left:leaf.x,top:leaf.y}}
+        initial={{opacity:.08,rotate:leaf.r,scale:.9}}
+        animate={{
+          opacity:[.08,.46,.26,.4,.08],
+          y:[0,-28,-10,-42,-64],
+          x:[0,12,-7,14,3],
+          rotate:[leaf.r,leaf.r+20,leaf.r-10,leaf.r+30,leaf.r+42],
+          scale:[.9,1.08,.98,1.12,.92]
+        }}
+        transition={{duration:leaf.d,delay:leaf.delay,repeat:Infinity,ease:"easeInOut"}}
+      >
+        <Leaf size={leaf.s} strokeWidth={1.6}/>
+      </motion.span>
+    )}
    </div>
+
    <div className="container hero-v2-grid">
     <motion.div className="hero-copy-v2" initial={{opacity:0,y:28}} animate={{opacity:1,y:0}} transition={{duration:.7}}>
      <div className="kicker"><span></span> Curated wellness & beauty</div>
