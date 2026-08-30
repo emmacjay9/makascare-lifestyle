@@ -13,6 +13,7 @@ const copy = (src,dst) => {
 ensure('app/shop');
 ensure('app/privacy');
 ensure('app/terms');
+ensure('app/studio/[[...tool]]'); 
 ensure('components');
 ensure('public/products');
 ensure('public/catalog');
